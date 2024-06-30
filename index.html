@@ -84,6 +84,13 @@
         .button:hover {
             background-color: #6f8570;
         }
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -100,7 +107,7 @@
         </div>
         <div class="gallery-item">
             <img src="./src/img3.jpg" alt="showcase-2">
-            <div class="description">UCL Main Building Limited Edtion 2024 </div>
+            <div class="description">UCL Main Building Limited Edition 2024</div>
             <a href="https://www.example.com" class="button" target="_blank">点击购买</a>
         </div>
         <div class="gallery-item">
@@ -133,7 +140,7 @@
             <div class="description">Coming Soon ... </div>
             <a href="" class="button" target="_blank">了解更多</a>
         </div>
-         <div class="gallery-item">
+        <div class="gallery-item">
             <img src="./src/img4.jpg" alt="showcase-9">
             <div class="description">Coming Soon ... </div>
             <a href="" class="button" target="_blank">了解更多</a>
