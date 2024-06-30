@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnet Master</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(to bottom, #f0f0f5, #d6d6d8);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .header {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+        .gallery-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(200, 200, 200, 0.5);
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .description {
+            margin: 10px 0;
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0071e3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🧲Magnetic More🧲</h1>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://kpc-enterprise.s3.eu-west-2.amazonaws.com/src/img2.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCWV1LXdlc3QtMiJIMEYCIQDEt1uvR6IeubL5Ccb8MxQ%2FUVQXP4Dzb5SdSKXek1KHzgIhANvmLN9XNQXHpgPIMmSBQ5zXvZqUdUEcJxBEDjEuLEVAKp4CCPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTkwMTgzODE5MjExIgyanEq%2FYg9bR62tcHUq8gHu%2F4ND3e0MJe22JqoUbDYucse461vXkgV5wlvQDCLe%2BBfAJ4wwhXKguBIaTcEJnGNpQq7n0Jkon7RdVIXwy6ZHLdmxrploBuIA67wExPmYk3WHPAwD1uN4Yz0YmOyEzYNYNanrzyGe6zo3gm8v%2Baluy4d9NSA5XfTNFnZv0BLDUdPojMf2DqtMi7J5%2B3NaSFM8%2BfbrZbeGapj4RmpZKa%2FIU5palg7OTjdr9%2Ft00JJOq%2FPwkFW4MZd4Aeg0E%2FYtnNAnDND9lwuwuYyT7i3YzkeqZQrZCN43YeJwA8zF65GXWc9wXUVf7h%2BLlGLn93LRC4T3djD8p%2FezBjreAQm1p4sSGdXZSp8W4auLxpUQMt%2F9bD99KhNrHbB6JK6lxOVnt1klIuVFhAFJsf%2BYvJdIx8M8sLGy7U6ocBjqIxJOQ1Ug3TdLMSPE7dTODuhzefa%2B9W%2FSfA%2F8hRL7nzD%2FJMk5mRT%2BX%2BKyGCYZsiHRtktE2PFycd9xegMfPQ140Dw1pOF9jrsVsTXr9%2FpoAGE%2FkMWxmO%2FfoZMJ9dOLvTtsaMIL2WnOmM4cIVHqxtiLrsQva4hnv9uw2%2FxAWXS5j2B8d97ww5iNqL9nLlf2MEoIzWET5SUCpU%2B3zNf0pNzh4A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T212437Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NSM7FWX2LWSVV%2F20240627%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=e03d763d72b81472a8d71ba1176767f3c23f75a2d721e3621b07b81df171bdf1" alt="showcase-1">
+            <div class="description">UCL Welcome 2023</div>
+            <a href="" class="button" target="_blank">已经售罄</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://kpc-enterprise.s3.eu-west-2.amazonaws.com/src/img3.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCWV1LXdlc3QtMiJIMEYCIQDEt1uvR6IeubL5Ccb8MxQ%2FUVQXP4Dzb5SdSKXek1KHzgIhANvmLN9XNQXHpgPIMmSBQ5zXvZqUdUEcJxBEDjEuLEVAKp4CCPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTkwMTgzODE5MjExIgyanEq%2FYg9bR62tcHUq8gHu%2F4ND3e0MJe22JqoUbDYucse461vXkgV5wlvQDCLe%2BBfAJ4wwhXKguBIaTcEJnGNpQq7n0Jkon7RdVIXwy6ZHLdmxrploBuIA67wExPmYk3WHPAwD1uN4Yz0YmOyEzYNYNanrzyGe6zo3gm8v%2Baluy4d9NSA5XfTNFnZv0BLDUdPojMf2DqtMi7J5%2B3NaSFM8%2BfbrZbeGapj4RmpZKa%2FIU5palg7OTjdr9%2Ft00JJOq%2FPwkFW4MZd4Aeg0E%2FYtnNAnDND9lwuwuYyT7i3YzkeqZQrZCN43YeJwA8zF65GXWc9wXUVf7h%2BLlGLn93LRC4T3djD8p%2FezBjreAQm1p4sSGdXZSp8W4auLxpUQMt%2F9bD99KhNrHbB6JK6lxOVnt1klIuVFhAFJsf%2BYvJdIx8M8sLGy7U6ocBjqIxJOQ1Ug3TdLMSPE7dTODuhzefa%2B9W%2FSfA%2F8hRL7nzD%2FJMk5mRT%2BX%2BKyGCYZsiHRtktE2PFycd9xegMfPQ140Dw1pOF9jrsVsTXr9%2FpoAGE%2FkMWxmO%2FfoZMJ9dOLvTtsaMIL2WnOmM4cIVHqxtiLrsQva4hnv9uw2%2FxAWXS5j2B8d97ww5iNqL9nLlf2MEoIzWET5SUCpU%2B3zNf0pNzh4A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T212532Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NSM7FWX2LWSVV%2F20240627%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=217df38b509fa846319c3cc394e82db2490ab9443cf383669dab78499da59926" alt="showcase-2">
+            <div class="description">UCL Main Building Limited Edtion (2024)</div>
+            <a href="https://www.example.com" class="button" target="_blank">点击购买</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://kpc-enterprise.s3.eu-west-2.amazonaws.com/src/img4.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCWV1LXdlc3QtMiJIMEYCIQDEt1uvR6IeubL5Ccb8MxQ%2FUVQXP4Dzb5SdSKXek1KHzgIhANvmLN9XNQXHpgPIMmSBQ5zXvZqUdUEcJxBEDjEuLEVAKp4CCPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTkwMTgzODE5MjExIgyanEq%2FYg9bR62tcHUq8gHu%2F4ND3e0MJe22JqoUbDYucse461vXkgV5wlvQDCLe%2BBfAJ4wwhXKguBIaTcEJnGNpQq7n0Jkon7RdVIXwy6ZHLdmxrploBuIA67wExPmYk3WHPAwD1uN4Yz0YmOyEzYNYNanrzyGe6zo3gm8v%2Baluy4d9NSA5XfTNFnZv0BLDUdPojMf2DqtMi7J5%2B3NaSFM8%2BfbrZbeGapj4RmpZKa%2FIU5palg7OTjdr9%2Ft00JJOq%2FPwkFW4MZd4Aeg0E%2FYtnNAnDND9lwuwuYyT7i3YzkeqZQrZCN43YeJwA8zF65GXWc9wXUVf7h%2BLlGLn93LRC4T3djD8p%2FezBjreAQm1p4sSGdXZSp8W4auLxpUQMt%2F9bD99KhNrHbB6JK6lxOVnt1klIuVFhAFJsf%2BYvJdIx8M8sLGy7U6ocBjqIxJOQ1Ug3TdLMSPE7dTODuhzefa%2B9W%2FSfA%2F8hRL7nzD%2FJMk5mRT%2BX%2BKyGCYZsiHRtktE2PFycd9xegMfPQ140Dw1pOF9jrsVsTXr9%2FpoAGE%2FkMWxmO%2FfoZMJ9dOLvTtsaMIL2WnOmM4cIVHqxtiLrsQva4hnv9uw2%2FxAWXS5j2B8d97ww5iNqL9nLlf2MEoIzWET5SUCpU%2B3zNf0pNzh4A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T212600Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NSM7FWX2LWSVV%2F20240627%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=0c86ede56977d9ae243a38c367d09abdf8b8eae6499199adbf1ff684ff451273" alt="showcase-3">
+            <div class="description">Coming Soon ... Manchester</div>
+            <a href="" class="button" target="_blank">了解更多</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://kpc-enterprise.s3.eu-west-2.amazonaws.com/src/img4.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCWV1LXdlc3QtMiJIMEYCIQDEt1uvR6IeubL5Ccb8MxQ%2FUVQXP4Dzb5SdSKXek1KHzgIhANvmLN9XNQXHpgPIMmSBQ5zXvZqUdUEcJxBEDjEuLEVAKp4CCPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTkwMTgzODE5MjExIgyanEq%2FYg9bR62tcHUq8gHu%2F4ND3e0MJe22JqoUbDYucse461vXkgV5wlvQDCLe%2BBfAJ4wwhXKguBIaTcEJnGNpQq7n0Jkon7RdVIXwy6ZHLdmxrploBuIA67wExPmYk3WHPAwD1uN4Yz0YmOyEzYNYNanrzyGe6zo3gm8v%2Baluy4d9NSA5XfTNFnZv0BLDUdPojMf2DqtMi7J5%2B3NaSFM8%2BfbrZbeGapj4RmpZKa%2FIU5palg7OTjdr9%2Ft00JJOq%2FPwkFW4MZd4Aeg0E%2FYtnNAnDND9lwuwuYyT7i3YzkeqZQrZCN43YeJwA8zF65GXWc9wXUVf7h%2BLlGLn93LRC4T3djD8p%2FezBjreAQm1p4sSGdXZSp8W4auLxpUQMt%2F9bD99KhNrHbB6JK6lxOVnt1klIuVFhAFJsf%2BYvJdIx8M8sLGy7U6ocBjqIxJOQ1Ug3TdLMSPE7dTODuhzefa%2B9W%2FSfA%2F8hRL7nzD%2FJMk5mRT%2BX%2BKyGCYZsiHRtktE2PFycd9xegMfPQ140Dw1pOF9jrsVsTXr9%2FpoAGE%2FkMWxmO%2FfoZMJ9dOLvTtsaMIL2WnOmM4cIVHqxtiLrsQva4hnv9uw2%2FxAWXS5j2B8d97ww5iNqL9nLlf2MEoIzWET5SUCpU%2B3zNf0pNzh4A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T212600Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NSM7FWX2LWSVV%2F20240627%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=0c86ede56977d9ae243a38c367d09abdf8b8eae6499199adbf1ff684ff451273" alt="showcase-4">
+            <div class="description">Coming Soon ... York</div>
+            <a href="" class="button" target="_blank">了解更多</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://kpc-enterprise.s3.eu-west-2.amazonaws.com/src/img4.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCWV1LXdlc3QtMiJIMEYCIQDEt1uvR6IeubL5Ccb8MxQ%2FUVQXP4Dzb5SdSKXek1KHzgIhANvmLN9XNQXHpgPIMmSBQ5zXvZqUdUEcJxBEDjEuLEVAKp4CCPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTkwMTgzODE5MjExIgyanEq%2FYg9bR62tcHUq8gHu%2F4ND3e0MJe22JqoUbDYucse461vXkgV5wlvQDCLe%2BBfAJ4wwhXKguBIaTcEJnGNpQq7n0Jkon7RdVIXwy6ZHLdmxrploBuIA67wExPmYk3WHPAwD1uN4Yz0YmOyEzYNYNanrzyGe6zo3gm8v%2Baluy4d9NSA5XfTNFnZv0BLDUdPojMf2DqtMi7J5%2B3NaSFM8%2BfbrZbeGapj4RmpZKa%2FIU5palg7OTjdr9%2Ft00JJOq%2FPwkFW4MZd4Aeg0E%2FYtnNAnDND9lwuwuYyT7i3YzkeqZQrZCN43YeJwA8zF65GXWc9wXUVf7h%2BLlGLn93LRC4T3djD8p%2FezBjreAQm1p4sSGdXZSp8W4auLxpUQMt%2F9bD99KhNrHbB6JK6lxOVnt1klIuVFhAFJsf%2BYvJdIx8M8sLGy7U6ocBjqIxJOQ1Ug3TdLMSPE7dTODuhzefa%2B9W%2FSfA%2F8hRL7nzD%2FJMk5mRT%2BX%2BKyGCYZsiHRtktE2PFycd9xegMfPQ140Dw1pOF9jrsVsTXr9%2FpoAGE%2FkMWxmO%2FfoZMJ9dOLvTtsaMIL2WnOmM4cIVHqxtiLrsQva4hnv9uw2%2FxAWXS5j2B8d97ww5iNqL9nLlf2MEoIzWET5SUCpU%2B3zNf0pNzh4A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T212600Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NSM7FWX2LWSVV%2F20240627%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=0c86ede56977d9ae243a38c367d09abdf8b8eae6499199adbf1ff684ff451273" alt="showcase-5">
+            <div class="description">Coming Soon ... </div>
+            <a href="" class="button" target="_blank">了解更多</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://kpc-enterprise.s3.eu-west-2.amazonaws.com/src/img4.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCWV1LXdlc3QtMiJIMEYCIQDEt1uvR6IeubL5Ccb8MxQ%2FUVQXP4Dzb5SdSKXek1KHzgIhANvmLN9XNQXHpgPIMmSBQ5zXvZqUdUEcJxBEDjEuLEVAKp4CCPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTkwMTgzODE5MjExIgyanEq%2FYg9bR62tcHUq8gHu%2F4ND3e0MJe22JqoUbDYucse461vXkgV5wlvQDCLe%2BBfAJ4wwhXKguBIaTcEJnGNpQq7n0Jkon7RdVIXwy6ZHLdmxrploBuIA67wExPmYk3WHPAwD1uN4Yz0YmOyEzYNYNanrzyGe6zo3gm8v%2Baluy4d9NSA5XfTNFnZv0BLDUdPojMf2DqtMi7J5%2B3NaSFM8%2BfbrZbeGapj4RmpZKa%2FIU5palg7OTjdr9%2Ft00JJOq%2FPwkFW4MZd4Aeg0E%2FYtnNAnDND9lwuwuYyT7i3YzkeqZQrZCN43YeJwA8zF65GXWc9wXUVf7h%2BLlGLn93LRC4T3djD8p%2FezBjreAQm1p4sSGdXZSp8W4auLxpUQMt%2F9bD99KhNrHbB6JK6lxOVnt1klIuVFhAFJsf%2BYvJdIx8M8sLGy7U6ocBjqIxJOQ1Ug3TdLMSPE7dTODuhzefa%2B9W%2FSfA%2F8hRL7nzD%2FJMk5mRT%2BX%2BKyGCYZsiHRtktE2PFycd9xegMfPQ140Dw1pOF9jrsVsTXr9%2FpoAGE%2FkMWxmO%2FfoZMJ9dOLvTtsaMIL2WnOmM4cIVHqxtiLrsQva4hnv9uw2%2FxAWXS5j2B8d97ww5iNqL9nLlf2MEoIzWET5SUCpU%2B3zNf0pNzh4A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T212600Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NSM7FWX2LWSVV%2F20240627%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=0c86ede56977d9ae243a38c367d09abdf8b8eae6499199adbf1ff684ff451273" alt="showcase-6">
+            <div class="description">Coming Soon ... </div>
+            <a href="" class="button" target="_blank">了解更多</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://kpc-enterprise.s3.eu-west-2.amazonaws.com/src/img4.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCWV1LXdlc3QtMiJIMEYCIQDEt1uvR6IeubL5Ccb8MxQ%2FUVQXP4Dzb5SdSKXek1KHzgIhANvmLN9XNQXHpgPIMmSBQ5zXvZqUdUEcJxBEDjEuLEVAKp4CCPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTkwMTgzODE5MjExIgyanEq%2FYg9bR62tcHUq8gHu%2F4ND3e0MJe22JqoUbDYucse461vXkgV5wlvQDCLe%2BBfAJ4wwhXKguBIaTcEJnGNpQq7n0Jkon7RdVIXwy6ZHLdmxrploBuIA67wExPmYk3WHPAwD1uN4Yz0YmOyEzYNYNanrzyGe6zo3gm8v%2Baluy4d9NSA5XfTNFnZv0BLDUdPojMf2DqtMi7J5%2B3NaSFM8%2BfbrZbeGapj4RmpZKa%2FIU5palg7OTjdr9%2Ft00JJOq%2FPwkFW4MZd4Aeg0E%2FYtnNAnDND9lwuwuYyT7i3YzkeqZQrZCN43YeJwA8zF65GXWc9wXUVf7h%2BLlGLn93LRC4T3djD8p%2FezBjreAQm1p4sSGdXZSp8W4auLxpUQMt%2F9bD99KhNrHbB6JK6lxOVnt1klIuVFhAFJsf%2BYvJdIx8M8sLGy7U6ocBjqIxJOQ1Ug3TdLMSPE7dTODuhzefa%2B9W%2FSfA%2F8hRL7nzD%2FJMk5mRT%2BX%2BKyGCYZsiHRtktE2PFycd9xegMfPQ140Dw1pOF9jrsVsTXr9%2FpoAGE%2FkMWxmO%2FfoZMJ9dOLvTtsaMIL2WnOmM4cIVHqxtiLrsQva4hnv9uw2%2FxAWXS5j2B8d97ww5iNqL9nLlf2MEoIzWET5SUCpU%2B3zNf0pNzh4A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T212600Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NSM7FWX2LWSVV%2F20240627%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=0c86ede56977d9ae243a38c367d09abdf8b8eae6499199adbf1ff684ff451273" alt="showcase-7">
+            <div class="description">Coming Soon ... </div>
+            <a href="" class="button" target="_blank">了解更多</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://kpc-enterprise.s3.eu-west-2.amazonaws.com/src/img4.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCWV1LXdlc3QtMiJIMEYCIQDEt1uvR6IeubL5Ccb8MxQ%2FUVQXP4Dzb5SdSKXek1KHzgIhANvmLN9XNQXHpgPIMmSBQ5zXvZqUdUEcJxBEDjEuLEVAKp4CCPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTkwMTgzODE5MjExIgyanEq%2FYg9bR62tcHUq8gHu%2F4ND3e0MJe22JqoUbDYucse461vXkgV5wlvQDCLe%2BBfAJ4wwhXKguBIaTcEJnGNpQq7n0Jkon7RdVIXwy6ZHLdmxrploBuIA67wExPmYk3WHPAwD1uN4Yz0YmOyEzYNYNanrzyGe6zo3gm8v%2Baluy4d9NSA5XfTNFnZv0BLDUdPojMf2DqtMi7J5%2B3NaSFM8%2BfbrZbeGapj4RmpZKa%2FIU5palg7OTjdr9%2Ft00JJOq%2FPwkFW4MZd4Aeg0E%2FYtnNAnDND9lwuwuYyT7i3YzkeqZQrZCN43YeJwA8zF65GXWc9wXUVf7h%2BLlGLn93LRC4T3djD8p%2FezBjreAQm1p4sSGdXZSp8W4auLxpUQMt%2F9bD99KhNrHbB6JK6lxOVnt1klIuVFhAFJsf%2BYvJdIx8M8sLGy7U6ocBjqIxJOQ1Ug3TdLMSPE7dTODuhzefa%2B9W%2FSfA%2F8hRL7nzD%2FJMk5mRT%2BX%2BKyGCYZsiHRtktE2PFycd9xegMfPQ140Dw1pOF9jrsVsTXr9%2FpoAGE%2FkMWxmO%2FfoZMJ9dOLvTtsaMIL2WnOmM4cIVHqxtiLrsQva4hnv9uw2%2FxAWXS5j2B8d97ww5iNqL9nLlf2MEoIzWET5SUCpU%2B3zNf0pNzh4A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T212600Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NSM7FWX2LWSVV%2F20240627%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=0c86ede56977d9ae243a38c367d09abdf8b8eae6499199adbf1ff684ff451273" alt="showcase-8">
+            <div class="description">Coming Soon ... </div>
+            <a href="" class="button" target="_blank">了解更多</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://kpc-enterprise.s3.eu-west-2.amazonaws.com/src/img4.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCWV1LXdlc3QtMiJIMEYCIQDEt1uvR6IeubL5Ccb8MxQ%2FUVQXP4Dzb5SdSKXek1KHzgIhANvmLN9XNQXHpgPIMmSBQ5zXvZqUdUEcJxBEDjEuLEVAKp4CCPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTkwMTgzODE5MjExIgyanEq%2FYg9bR62tcHUq8gHu%2F4ND3e0MJe22JqoUbDYucse461vXkgV5wlvQDCLe%2BBfAJ4wwhXKguBIaTcEJnGNpQq7n0Jkon7RdVIXwy6ZHLdmxrploBuIA67wExPmYk3WHPAwD1uN4Yz0YmOyEzYNYNanrzyGe6zo3gm8v%2Baluy4d9NSA5XfTNFnZv0BLDUdPojMf2DqtMi7J5%2B3NaSFM8%2BfbrZbeGapj4RmpZKa%2FIU5palg7OTjdr9%2Ft00JJOq%2FPwkFW4MZd4Aeg0E%2FYtnNAnDND9lwuwuYyT7i3YzkeqZQrZCN43YeJwA8zF65GXWc9wXUVf7h%2BLlGLn93LRC4T3djD8p%2FezBjreAQm1p4sSGdXZSp8W4auLxpUQMt%2F9bD99KhNrHbB6JK6lxOVnt1klIuVFhAFJsf%2BYvJdIx8M8sLGy7U6ocBjqIxJOQ1Ug3TdLMSPE7dTODuhzefa%2B9W%2FSfA%2F8hRL7nzD%2FJMk5mRT%2BX%2BKyGCYZsiHRtktE2PFycd9xegMfPQ140Dw1pOF9jrsVsTXr9%2FpoAGE%2FkMWxmO%2FfoZMJ9dOLvTtsaMIL2WnOmM4cIVHqxtiLrsQva4hnv9uw2%2FxAWXS5j2B8d97ww5iNqL9nLlf2MEoIzWET5SUCpU%2B3zNf0pNzh4A%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T212600Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAYS2NSM7FWX2LWSVV%2F20240627%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=0c86ede56977d9ae243a38c367d09abdf8b8eae6499199adbf1ff684ff451273" alt="showcase-9">
+            <div class="description">Coming Soon ... </div>
+            <a href="" class="button" target="_blank">了解更多</a>
+        </div>
+    </div>
+
+</body>
+</html>
