@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(to bottom, #f0f0f5, #d6d6d8);
+            background: linear-gradient(to bottom, #e6efea, #d6d8d8);
             color: #333;
             margin: 0;
             padding: 0;
@@ -20,7 +20,7 @@
             justify-content: center;
         }
         .header {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(244, 245, 240, 0.8);
             width: 100%;
             text-align: center;
             padding: 20px 0;
@@ -30,7 +30,7 @@
         .header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: #333;
+            color: #4a5a4f;
         }
         .gallery {
             display: grid;
@@ -41,12 +41,15 @@
             margin-bottom: 20px;
         }
         .gallery-item {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(244, 245, 240, 0.9);
             border: 1px solid rgba(200, 200, 200, 0.5);
             padding: 15px;
             text-align: center;
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .gallery-item:hover {
             transform: scale(1.05);
@@ -61,25 +64,32 @@
         .description {
             margin: 10px 0;
             color: #666;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 60px; /* Adjust based on line-height to ensure consistent height */
         }
         .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #0071e3;
+            background-color: #879f8e;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
+            margin-top: auto;
         }
         .button:hover {
-            background-color: #005bb5;
+            background-color: #6f8570;
         }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1>🧲Magnetic More🧲</h1>
+        <h1>🥑 Magnetic More 🧲</h1>
     </div>
 
     <div class="gallery">
