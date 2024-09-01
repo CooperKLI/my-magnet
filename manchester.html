@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & About - MyMagnet</title>
+    <title>Product Detail - MyMagnet</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -17,7 +17,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             min-height: 100vh;
         }
         .header {
@@ -52,52 +51,92 @@
             padding: 10px 15px;
             display: block;
             transition: background-color 0.3s;
-            white-space: nowrap; /* Prevent text from wrapping */
+            white-space: nowrap;
         }
         .navbar ul li a:hover {
             background-color: rgba(244, 245, 240, 0.8);
             border-radius: 5px;
         }
-        .navbar ul li ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: rgba(244, 245, 240, 0.9);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            z-index: 1000;
-        }
-        .navbar ul li ul li {
-            margin: 0;
-        }
-        .navbar ul li:hover ul {
-            display: block;
-        }
         .content {
             background-color: rgba(244, 245, 240, 0.9);
             border: 1px solid rgba(200, 200, 200, 0.5);
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             width: 80%;
             max-width: 800px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
         }
-        .content h2 {
+        .product-image {
+            flex: 1 1 40%;
+            max-width: 400px;
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-details {
+            flex: 1 1 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-details h2 {
             color: #4a5a4f;
             margin-top: 0;
         }
-        .content p {
+        .product-details p {
             color: #666;
             line-height: 1.6;
+        }
+        .product-details .price {
+            font-size: 1.5em;
+            color: #879f8e;
             margin: 10px 0;
         }
-        .content a {
-            color: #879f8e;
-            text-decoration: none;
+        .product-details .order-button {
+            background-color: #4a5a4f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            align-self: flex-start;
         }
-        .content a:hover {
-            text-decoration: underline;
+        .product-details .order-button:hover {
+            background-color: #879f8e;
+        }
+        .reviews {
+            background-color: rgba(244, 245, 240, 0.9);
+            border: 1px solid rgba(200, 200, 200, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      		margin-bottom: 20px;
+        }
+        .reviews h3 {
+            color: #4a5a4f;
+            margin-top: 0;
+        }
+        .review {
+            margin-bottom: 20px;
+        }
+        .review p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .review .reviewer {
+            font-weight: bold;
+            color: #4a5a4f;
         }
     </style>
 </head>
@@ -109,32 +148,32 @@
 
     <nav class="navbar">
         <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-<!--        
-            <li>
-                <a href="#">Gifts</a>
-                <ul>
-                    <li><a href="#">University College London</a></li>
-                    <li><a href="#">University of Manchester</a></li>
-                    <li><a href="#">University of York</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Item</a>
-                <ul>
-                    <li><a href="#">Magnets</a></li>
-                    <li><a href="#">Bags</a></li>
-                    <li><a href="#">Others</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">About & Contact</a></li>
--->            
+            <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
 
     <div class="content">
+        <div class="product-image">
+            <img src="your-product-image-url.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h2>Product Name</h2>
+            <p>Here is a detailed description of the product, highlighting its features, specifications, and any other relevant information that might interest potential buyers.</p>
+            <p class="price">$49.99</p>
+            <button class="order-button">Order Now</button>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+            <p class="reviewer">John Doe</p>
+            <p>Great product! I really love it. Highly recommended.</p>
+        </div>
+        <div class="review">
+            <p class="reviewer">Jane Smith</p>
+            <p>Good quality, arrived on time. Will buy again.</p>
+        </div>
     </div>
 
 </body>
