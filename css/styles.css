@@ -124,11 +124,11 @@ body {
 .product-details .order-button {
     background-color: #4a5a4f;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    text-transform: uppercase;
+    font-size: 1em;
     font-weight: bold;
     transition: background-color 0.3s;
     margin-top: 20px;
@@ -143,9 +143,10 @@ body {
     background-color: rgba(244, 245, 240, 0.9);
     border: 1px solid rgba(200, 200, 200, 0.5);
     padding: 20px;
+    margin: 20px;
     border-radius: 10px;
     width: 80%;
-    max-width: 800px;
+    max-width: 1200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
