@@ -99,7 +99,8 @@ body {
 }
 
 .product-details {
-    flex: 1 1 55%;
+    flex: 1 1 20%;
+  	margin: 25px, auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -113,12 +114,6 @@ body {
 .product-details p {
     color: #666;
     line-height: 1.6;
-}
-
-.product-details .price {
-    font-size: 1.5em;
-    color: #879f8e;
-    margin: 10px 0;
 }
 
 .product-details .order-button {
