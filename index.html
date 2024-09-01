@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -8,7 +9,6 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" href="css/styles.css">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -33,6 +33,47 @@
             margin: 0;
             font-size: 2.5em;
             color: #4a5a4f;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar ul li {
+            position: relative;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #4a5a4f;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s;
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+        .navbar ul li a:hover {
+            background-color: rgba(244, 245, 240, 0.8);
+            border-radius: 5px;
+        }
+        .navbar ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(244, 245, 240, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        .navbar ul li ul li {
+            margin: 0;
+        }
+        .navbar ul li:hover ul {
+            display: block;
         }
         .gallery {
             display: grid;
@@ -103,7 +144,7 @@
         .qa-section {
             width: 80%;
             margin: 20px auto;
-            padding: 25px;
+            padding: 0px;
             background-color: rgba(244, 245, 240, 0.9);
             border-radius: 0px;
             box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
@@ -114,7 +155,7 @@
             margin-bottom: 20px;
         }
         .qa-section dl {
-            margin: 0;
+            margin: 25px;
         }
         .qa-section dt {
             font-weight: bold;
@@ -140,18 +181,15 @@
             <li><a href="index.html">Home</a></li>
 <!--            
             <li>
-                <a href="#">Gifts</a>
+                <a href="#">Magnets</a>
                 <ul>
                     <li><a href="#">University College London</a></li>
                     <li><a href="#">University of Manchester</a></li>
-                    <li><a href="#">University of York</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#">Item</a>
                 <ul>
-                    <li><a href="#">Magnets</a></li>
-                    <li><a href="#">Bags</a></li>
                     <li><a href="#">Others</a></li>
                 </ul>
             </li>
